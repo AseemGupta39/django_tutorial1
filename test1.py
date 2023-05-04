@@ -49,5 +49,7 @@ mydb.commit()
 print(mycursor.rowcount, "record inserted.")
 
 ##### f"""{now1.strftime("%Y-%m-%d")}"""
+# mycursor.execute("CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY,firstname VARCHAR(20) NOT NULL,lastname VARCHAR(20),MobileNo INT(10) NOT NULL,DATE_OF_PURCHASE DATE,TIME_OF_PURCHASE TIME,CONSTRAINT UC_Person UNIQUE (firstname,MobileNo))")
+## mycursor.execute("CREATE TABLE customer_order (id INT NOT NULL REFERENCES customers(id) ,DATE_OF_PURCHASE DATE,TIME_OF_PURCHASE TIME,Medicine VARCHAR(30),qty TINYINT,RENEWAL INT")
 
 #### INSERT INTO customers (firstname, lastname, MobileNo, DATE_OF_PURCHASE, TIME_OF_PURCHASE) VALUES ('Aseem', 'Gupta', 8005502214, '2023-05-04', '23:28:55');
