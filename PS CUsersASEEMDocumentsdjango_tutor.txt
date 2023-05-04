@@ -1,0 +1,6 @@
+PS C:\Users\ASEEM\Documents\django_tutorial1> django-admin startproject hello # isse main project banta hai iske ander ham kaam karte hai
+PS C:\Users\ASEEM\Documents\django_tutorial1> cd .\hello\ # us project ke ander ghusna 
+PS C:\Users\ASEEM\Documents\django_tutorial1\hello> python .\manage.py runserver # ab us project ka server run karna
+PS C:\Users\ASEEM\Documents\django_tutorial1\hello> python .\manage.py startapp home # new app add karna
+
+# har app me urls.py file add karte hai 
